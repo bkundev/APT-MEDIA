@@ -10,7 +10,7 @@ fi
 echo "========================================================================= "
 echo "Use this function to change language for VPSSIM"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM support EngLish & Vietnamese"
+echo "APT MEDIA support EngLish & Vietnamese"
 echo "========================================================================= "
 read -r -p "You want to change VPSSIM language to English ? [y/N] " response
 case $response in
@@ -48,7 +48,7 @@ download_main_menu () {
 wget -q --no-check-certificate https://github.com/itvn9online/vpssim-free/raw/master/script/vpssim/vpssim -O /bin/vpssim && chmod +x /bin/vpssim
 }
 download_main_menu
-checkvpssim_mainmenu=`cat /bin/vpssim`
+checkvpssim_mainmenu=`cat /bin/apt`
 if [ -z "$checkvpssim_mainmenu" ]; then
 download_main_menu
 fi

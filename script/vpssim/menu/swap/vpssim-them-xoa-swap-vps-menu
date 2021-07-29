@@ -22,8 +22,8 @@ select opt in "${options[@]}" "Thoat"; do
     6 ) /etc/vpssim/menu/swap/vpssim-create-swap-6144;;
     7 ) /etc/vpssim/menu/swap/vpssim-xoa-swap-vps;;
         
-$(( ${#options[@]}+1 )) ) echo "BYE!";  clear && /bin/vpssim;;
-0 ) echo "BYE!";  clear && /bin/vpssim;;
+$(( ${#options[@]}+1 )) ) echo "BYE!";  clear && /bin/apt;;
+0 ) echo "BYE!";  clear && /bin/apt;;
      *) echo "Ban nhap sai, vui long nhap cac so trong list tren";continue;;
 
     esac

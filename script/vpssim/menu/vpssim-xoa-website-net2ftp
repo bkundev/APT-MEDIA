@@ -14,7 +14,7 @@ net2ftpsite=$(cat /etc/vpssim/net2ftpsite.info)
 if [ ! -f /etc/nginx/conf.d/$net2ftpsite.conf ]; then
 clear
 echo "========================================================================="
-echo "VPSSIM khong the xoa domain $net2ftpsite !"
+echo "APT MEDIA khong the xoa domain $net2ftpsite !"
 /etc/vpssim/menu/vpssim-net2ftp-menu
 exit
 fi
@@ -22,7 +22,7 @@ fi
 if [ ! -d /home/$net2ftpsite/public_html ]; then
 clear
 echo "========================================================================="
-echo "VPSSIM khong the xoa domain $net2ftpsite !"
+echo "APT MEDIA khong the xoa domain $net2ftpsite !"
 /etc/vpssim/menu/vpssim-net2ftp-menu
 exit
 fi
@@ -65,7 +65,7 @@ if [ ! "$(grep /home/$net2ftpsite/ /etc/vpssim/FTP-Account.info)" == "" ];then
 echo "========================================================================="
 echo "Phat hien tai khoan FTP: $(grep /home/$net2ftpsite/ /etc/vpssim/FTP-Account.info | awk 'NR==1 {print $7}') cua $net2ftpsite  "
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM se remove tai khoan FTP: $(grep /home/$net2ftpsite/ /etc/vpssim/FTP-Account.info | awk 'NR==1 {print $7}')"
+echo "APT MEDIA se remove tai khoan FTP: $(grep /home/$net2ftpsite/ /etc/vpssim/FTP-Account.info | awk 'NR==1 {print $7}')"
 echo "-------------------------------------------------------------------------"
 echo "Please wait ...."
 echo "-------------------------------------------------------------------------"
@@ -95,7 +95,7 @@ if [ ! "$(grep /home/$net2ftpsite /etc/vpssim/opcache.blacklist)" == "" ]; then
 echo "-------------------------------------------------------------------------"
 echo "Phat hien $net2ftpsite trong Zend Opcache Blacklist"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM se xoa $net2ftpsite trong blacklist nay"
+echo "APT MEDIA se xoa $net2ftpsite trong blacklist nay"
 echo "-------------------------------------------------------------------------"
 echo "Please wait ...."
 sleep 6
@@ -115,7 +115,7 @@ check_and_delete_auto_backup_website()
 echo "========================================================================="
 echo "Phat hien $net2ftpsite dang bat auto backup code"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM se tat che do auto backup code khi remove khoi server"
+echo "APT MEDIA se tat che do auto backup code khi remove khoi server"
 echo "-------------------------------------------------------------------------"
 echo "Please wait ...."
 sleep 5

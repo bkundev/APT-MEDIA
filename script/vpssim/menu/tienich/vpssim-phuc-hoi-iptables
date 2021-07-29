@@ -3,7 +3,7 @@
 if [ ! -f /etc/vpssim/iptables.bak ]; then
 clear
 echo "========================================================================="
-echo "VPSSIM khong tim thay ban backup cua IPtables Firewall !"
+echo "APT MEDIA khong tim thay ban backup cua IPtables Firewall !"
 /etc/vpssim/menu/vpssim-iptables-firewall-manager-menu
 exit
 fi

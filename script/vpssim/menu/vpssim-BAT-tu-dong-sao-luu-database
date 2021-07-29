@@ -9,7 +9,7 @@ options=( "3 Ngay" "7 Ngay" "10 Ngay" "15 Ngay" "20 Ngay" "25 Ngay" "30 Ngay")
 echo "========================================================================="
 echo "Lua Chon Server Se Luu Tru File Backup Trong Thoi Gian Bao Lau"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM Se Tu Dong Xoa File Backup Khi Dat Toi Gioi Han Nay" 
+echo "APT MEDIA Se Tu Dong Xoa File Backup Khi Dat Toi Gioi Han Nay" 
 echo "========================================================================="
 PS3="$prompt"
 select opt in "${options[@]}"; do 
@@ -48,7 +48,7 @@ options=( "7 Ngay" "14 Ngay" "21 Ngay" "28 Ngay" "35 Ngay" "42 Ngay" "49 Ngay")
 echo "========================================================================="
 echo "Lua Chon Server Se Luu Tru File Backup Trong Thoi Gian Bao Lau"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM Se Tu Dong Xoa File Backup Khi Dat Toi Gioi Han Nay"
+echo "APT MEDIA Se Tu Dong Xoa File Backup Khi Dat Toi Gioi Han Nay"
 echo "========================================================================="
 PS3="$prompt"
 select opt in "${options[@]}"; do 

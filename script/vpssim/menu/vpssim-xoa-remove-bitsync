@@ -25,5 +25,5 @@ echo "Huy bo remove BTsync "
 esac
 clear 
 echo "========================================================================= "
-echo "VPSSIM hoan thanh remove BTsync "
+echo "APT MEDIA hoan thanh remove BTsync "
 /etc/vpssim/menu/vpssim-bitsync-menu

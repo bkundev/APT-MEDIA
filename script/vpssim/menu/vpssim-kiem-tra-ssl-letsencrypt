@@ -30,7 +30,7 @@ clear
 echo "========================================================================="
 echo "Khong tim thay folder public_html cua $website"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the thuc hien thuc nang nay."
+echo "APT MEDIA khong the thuc hien thuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 exit
 fi
@@ -68,7 +68,7 @@ echo "-------------------------------------------------------------------------"
 echo "Chung chi SSL het han sau: $thoigianconlai ngay."
 if [ -f /etc/vpssim/Renew.SSL.Letencrypt ] && [ -f /etc/cron.d/vpssim.autorenew.ssl.cron ]; then
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM se tu dong gia han chung chi sau: $thoigiannengiahanlai ngay."
+echo "APT MEDIA se tu dong gia han chung chi sau: $thoigiannengiahanlai ngay."
 else
 echo "-------------------------------------------------------------------------"
 echo "BAN CHUA BAT TINH NANG TU DONG GIA HAN SSL."

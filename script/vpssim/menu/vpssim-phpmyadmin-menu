@@ -54,7 +54,7 @@ select opt in "${options[@]}" ; do
     4) /etc/vpssim/menu/tienich/vpssim-change-port-bi-mat;;
     #5) /etc/vpssim/menu/vpssim-hien-link-phpmyadmin;;
     5) /etc/vpssim/menu/dat-mat-khau-bao-ve-phpmyadmin-backup-files;;
-    6) clear && /bin/vpssim;;
+    6) clear && /bin/apt;;
     0) clear && apt;;
     
   *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;

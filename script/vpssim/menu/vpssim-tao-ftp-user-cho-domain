@@ -64,7 +64,7 @@ echo "Tim thay $website tren he thong"
 echo "-------------------------------------------------------------------------"
 echo "$website chua tao tai khoan FTP"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM se tao tai khoan FTP cho $website ngay bay gio"
+echo "APT MEDIA se tao tai khoan FTP cho $website ngay bay gio"
 echo "-------------------------------------------------------------------------"
 echo "Please wait..."; sleep 6
 

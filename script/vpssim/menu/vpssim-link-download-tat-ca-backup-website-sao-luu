@@ -21,7 +21,7 @@ fi
 if [ ! -f /tmp/checksite-list ]; then
 clear
 echo "========================================================================="
-echo "VPSSIM khong tim thay cac ban backup tren server"
+echo "APT MEDIA khong tim thay cac ban backup tren server"
 /etc/vpssim/menu/vpssim-sao-luu
 fi
 sowebsitecobackup=$(cat /tmp/checksite-list | wc -l)

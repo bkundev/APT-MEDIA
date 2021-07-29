@@ -12,7 +12,7 @@ clear
 echo "========================================================================"
 echo "Nginx service is not running"
 echo "------------------------------------------------------------------------"
-echo "VPSSIM trying to start it"
+echo "APT MEDIA trying to start it"
 echo "------------------------------------------------------------------------"
 echo "Please wait ..."
 sleep 5 ; clear
@@ -32,7 +32,7 @@ service nginx restart
 		else
 		clear
 echo "========================================================================"
-echo "VPSSIM can not start Nginx Service"
+echo "APT MEDIA can not start Nginx Service"
 sleep 4 ;
 	clear
 	echo "========================================================================="
@@ -55,7 +55,7 @@ clear
 echo "========================================================================"
 echo "Nginx service is not running"
 echo "------------------------------------------------------------------------"
-echo "VPSSIM trying to start it"
+echo "APT MEDIA trying to start it"
 echo "------------------------------------------------------------------------"
 echo "Please wait ..."
 sleep 5 ; clear
@@ -76,7 +76,7 @@ service nginx start
 		else
 				clear
 echo "========================================================================"
-echo "VPSSIM can not start Nginx Service"
+echo "APT MEDIA can not start Nginx Service"
 sleep 4 ;
 	clear
 	echo "========================================================================="

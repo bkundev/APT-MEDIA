@@ -127,7 +127,7 @@ done
 fi
 cd
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM se doi ten file backup cu thanh:"
+echo "APT MEDIA se doi ten file backup cu thanh:"
 echo "-------------------------------------------------------------------------"
 echo "`cat /tmp/vpssim_ten_file_cu`"
 echo "-------------------------------------------------------------------------"
@@ -164,7 +164,7 @@ rm -rf /tmp/*vpssim*
 /etc/vpssim/menu/vpssim-sao-luu
 else
 echo "-------------------------------------------------------------------------"
-	echo "VPSSIM dang sao luu $website, ban cho xiu...."
+	echo "APT MEDIA dang sao luu $website, ban cho xiu...."
 	sleep 1
 	if [  -f /bin/vpssim-backupcode-$website ]; then
 	if [ ! "$(grep vpssim-backupcode-$website /etc/cron.d/vpssim.code.cron)" == "" ]; then

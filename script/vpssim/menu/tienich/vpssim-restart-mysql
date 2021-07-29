@@ -15,7 +15,7 @@ clear
 echo "========================================================================"
 echo "MySQL service is not running"
 echo "------------------------------------------------------------------------"
-echo "VPSSIM trying to start it"
+echo "APT MEDIA trying to start it"
 echo "------------------------------------------------------------------------"
 echo "Please wait ..."
 sleep 5 ; clear
@@ -42,7 +42,7 @@ rm -f /tmp/config.temp
 	if [ ! -f /var/lib/mysql/vpssimCheckDB/db.opt ]; then
 	clear
 echo "========================================================================"
-echo "VPSSIM can not start MySQL Service"
+echo "APT MEDIA can not start MySQL Service"
 sleep 4 ;
 	clear
 	echo "========================================================================="

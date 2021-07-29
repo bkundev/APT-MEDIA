@@ -14,7 +14,7 @@ exit
 fi
 rm -rf /tmp/checktmp
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM dang kiem tra. Please wait ..."
+echo "APT MEDIA dang kiem tra. Please wait ..."
 #checkketnoi=$(curl -o /dev/null --silent --head --write-out '%{http_code}' "https://vpssim.com/script/vpssim/Softwear/00-all-netdata-version.txt" )
 checkketnoi=$(curl -o /dev/null --silent --head --write-out '%{http_code}' "https://raw.githubusercontent.com/bkundev/APT-MEDIA/master/script/vpssim/Softwear/00-all-netdata-version.txt" )
 if [[ "$checkketnoi" == "000" ]]; then

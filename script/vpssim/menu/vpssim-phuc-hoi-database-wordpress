@@ -108,7 +108,7 @@ else
 	echo "========================================================================="
 	read -p "Upload file xong. Nhan [Enter] de phuc hoi ..."
 	echo "-------------------------------------------------------------------------"
-	echo "VPSSIM dang tim file Backup .... "
+	echo "APT MEDIA dang tim file Backup .... "
 	echo "-------------------------------------------------------------------------"
 	sleep 4
 	if [ -f /home/$website/public_html/VPSSIM-DATABASE.sql.gz ]; then

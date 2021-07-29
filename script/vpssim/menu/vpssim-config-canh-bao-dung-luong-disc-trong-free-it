@@ -16,7 +16,7 @@ clear
 echo "========================================================================="
 echo "Rat tiec ! "
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the chay chuc nang nay tren server cua ban"
+echo "APT MEDIA khong the chay chuc nang nay tren server cua ban"
 echo "-------------------------------------------------------------------------"
 /etc/vpssim/menu/vpssim-tien-ich
 exit
@@ -63,7 +63,7 @@ echo "Ban hay lam lai !"
 exit
 fi
 echo "-------------------------------------------------------------------------"  
-echo "VPSSIM se canh bao DISC FULL khi dung luong disc cua server < ${minfreedisca} MB"
+echo "APT MEDIA se canh bao DISC FULL khi dung luong disc cua server < ${minfreedisca} MB"
 echo "-------------------------------------------------------------------------" 
 echo "Please wait ..." ; sleep 2
 echo "${minfreedisca}" > /etc/vpssim/minfreedisc.info 

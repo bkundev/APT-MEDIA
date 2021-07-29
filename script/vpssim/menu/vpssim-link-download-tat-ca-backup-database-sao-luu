@@ -15,7 +15,7 @@ done
 if [ ! -f /tmp/checksite-list ]; then
 clear
 echo "========================================================================="
-echo "VPSSIM khong tim thay file backup database tren server"
+echo "APT MEDIA khong tim thay file backup database tren server"
 /etc/vpssim/menu/vpssim-them-xoa-database
 exit
 fi

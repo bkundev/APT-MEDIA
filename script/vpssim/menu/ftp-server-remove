@@ -32,7 +32,7 @@ echo "Huy bo remove FTP Server "
 esac
 clear 
 echo "========================================================================= "
-echo "VPSSIM hoan thanh remove FTP Server "
+echo "APT MEDIA hoan thanh remove FTP Server "
 /etc/vpssim/menu/vpssim-ftpserver-menu
 fi
 clear

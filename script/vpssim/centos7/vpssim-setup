@@ -12,7 +12,7 @@ echo "khac, sau khi cai dat server xong dung chuc nang [ Change PHP Version ] "
 echo "--------------------------------------------------------------------------"
 echo "trong [ Update System ] cua APT MEDIA."
 echo "--------------------------------------------------------------------------"
-echo "VPSSIM ho tro: PHP 7.2, PHP 7.1, PHP 7.0, PHP 5.6, PHP 5.5 & PHP 5.4"
+echo "APT MEDIA ho tro: PHP 7.2, PHP 7.1, PHP 7.0, PHP 5.6, PHP 5.5 & PHP 5.4"
 cpuname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cpucores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 cpufreq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -992,10 +992,10 @@ yes | cp -rf /opt/apt_media/script/vpssim/motd /etc/motd
 # Download vpssim_main_menu
 download_vpssim_main_menu () {
 #wget --no-check-certificate -q https://hostingaz.vn/script/vpssim/vpssim -O /bin/vpssim && chmod +x /bin/vpssim
-yes | cp -rf /opt/apt_media/script/vpssim/vpssim /bin/vpssim && chmod +x /bin/vpssim
+yes | cp -rf /opt/apt_media/script/vpssim/vpssim /bin/apt && chmod +x /bin/apt
 }
 download_vpssim_main_menu
-checkvpssim_main_menu=`cat /bin/vpssim`
+checkvpssim_main_menu=`cat /bin/apt`
 if [ -z "$checkvpssim_main_menu" ]; then
 download_vpssim_main_menu
 fi
@@ -1218,7 +1218,7 @@ chmod +x /tmp/finishedemail.sh
 rm -f /tmp/finishedemail.sh
 clear
 echo "=========================================================================="
-echo "VPSSIM da hoan tat qua trinh cai dat Server. "
+echo "APT MEDIA da hoan tat qua trinh cai dat Server. "
 echo "=========================================================================="
 echo "Lenh goi APT MEDIA: apt"
 echo "--------------------------------------------------------------------------"

@@ -36,7 +36,7 @@ select opt in "${options[@]}" "Thoat"; do
     3 ) /etc/vpssim/menu/memcache/vpssim-memcache-change-size;;
        
   
-$(( ${#options[@]}+1 )) ) echo "";  clear && /bin/vpssim;;
+$(( ${#options[@]}+1 )) ) echo "";  clear && /bin/apt;;
      *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 
     esac

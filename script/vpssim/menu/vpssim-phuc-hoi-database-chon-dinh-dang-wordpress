@@ -92,7 +92,7 @@ if [ ! -f /home/$mainsite/private_html/backup/$dataname/*.sql.gz ]; then
 	echo "========================================================================="
 	read -p "Khi upload hoan thanh. Nhan [Enter] de phuc hoi..."
 	echo "-------------------------------------------------------------------------"
-	echo "VPSSIM dang tim kiem file backup .... "
+	echo "APT MEDIA dang tim kiem file backup .... "
 	echo "-------------------------------------------------------------------------"
 	sleep 4
 	if [ -f /home/$website/public_html/VPSSIM-DATABASE.tar.gz ]; then
@@ -154,7 +154,7 @@ if [ "$luachonphuchoi" = "phuchoitufilebackup" ]; then
 echo "--------------------------------------------------------------------------"
 echo "Please wait ...."
 echo "--------------------------------------------------------------------------"
-echo "VPSSIM dang Restore $dataname.........."
+echo "APT MEDIA dang Restore $dataname.........."
 sleep 3
 gunzip < /home/$mainsite/private_html/backup/$dataname/$filename | mysql -u root -p$mariadbpass $dataname
 date -r /var/lib/mysql/$dataname +%H%M%S> /tmp/vpssim2
@@ -213,7 +213,7 @@ randomcode=`date |md5sum |cut -c '1-12'`
 	echo "========================================================================="
 	read -p "Khi upload hoan thanh. Nhan [Enter] de phuc hoi..."
 	echo "-------------------------------------------------------------------------"
-	echo "VPSSIM dang tim kiem file backup .... "
+	echo "APT MEDIA dang tim kiem file backup .... "
 	echo "-------------------------------------------------------------------------"
 	sleep 4
 	if [ -f /home/$website/public_html/VPSSIM-DATABASE.tar.gz ]; then

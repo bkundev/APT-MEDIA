@@ -13,7 +13,7 @@ fi
 echo "========================================================================= "
 echo "Su dung chuc nang nay de thay doi ngon ngu VPSSIM sang tieng Viet"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM ho tro Tieng Anh & Tieng Viet"
+echo "APT MEDIA ho tro Tieng Anh & Tieng Viet"
 echo "========================================================================= "
 read -r -p "Ban muon thay doi ngon ngu VPSSIM sang Tieng Viet ? [y/N] " response
 case $response in
@@ -52,7 +52,7 @@ download_main_menu () {
 wget -q --no-check-certificate https://hostingaz.vn/script/vpssim/vpssim -O /bin/vpssim && chmod +x /bin/vpssim
 }
 download_main_menu
-checkvpssim_mainmenu=`cat /bin/vpssim`
+checkvpssim_mainmenu=`cat /bin/apt`
 if [ -z "$checkvpssim_mainmenu" ]; then
 download_main_menu
 fi

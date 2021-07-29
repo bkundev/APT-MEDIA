@@ -70,7 +70,7 @@ clear
 echo "========================================================================="
 echo "Ban chua tro $website toi $serverip !"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the chay chuc nang nay."
+echo "APT MEDIA khong the chay chuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 fi
 
@@ -79,7 +79,7 @@ clear
 echo "========================================================================="
 echo "$websiteTO khong su dung SSL by Let's Encrypt"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the chay chuc nang nay."
+echo "APT MEDIA khong the chay chuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 fi
 
@@ -88,7 +88,7 @@ clear
 echo "========================================================================="
 echo "$websiteTO su dung SSL nhung khong phai SSL cua Let's Encrypt."
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the thuc hien chuc nang nay."
+echo "APT MEDIA khong the thuc hien chuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 exit
 fi
@@ -172,7 +172,7 @@ clear
 echo "========================================================================="
 echo "Co loi xay ra trong qua trinh remove SSL cho $websiteTO."
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the chay chuc nang nay."
+echo "APT MEDIA khong the chay chuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 exit
 fi
@@ -193,7 +193,7 @@ echo "========================================================================="
 case $response in
     [yY][eE][sS]|[yY]) 
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM will retore backup Vhost NON_SSL (HTTP) of $websiteTO."
+echo "APT MEDIA will retore backup Vhost NON_SSL (HTTP) of $websiteTO."
 echo "-------------------------------------------------------------------------"
 echo "Please wait ..."; sleep 2
 rm -rf /etc/vpssim/.tmp/$website.conf_HTTPS
@@ -225,7 +225,7 @@ clear
 echo "========================================================================="
 echo "Co loi xay ra trong qua trinh remove SSL cho $websiteTO."
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM khong the chay chuc nang nay."
+echo "APT MEDIA khong the chay chuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 fi
 ;;

@@ -81,7 +81,7 @@ select opt in "${options[@]}" ; do
     11 ) /etc/vpssim/menu/vpssim-lay-link-sao-luu-database-backup-menu;;
     12 ) /etc/vpssim/menu/vpssim-xoa-toan-bo-backup-database;;
     13) /etc/vpssim/menu/vpssim-list-database-tren-vps-them-xoa-function;; 
-    14) clear && /bin/vpssim;;
+    14) clear && /bin/apt;;
     0) clear && apt;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 

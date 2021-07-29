@@ -16,7 +16,7 @@ clear
 echo "========================================================================="
 echo "Can not find file /root/.bash_profile"
 echo "-------------------------------------------------------------------------"
-echo "VPSSIM can not run this function on this server"
+echo "APT MEDIA can not run this function on this server"
 echo "-------------------------------------------------------------------------"
 /etc/vpssim/menu/vpssim-tien-ich
 exit

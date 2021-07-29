@@ -17,7 +17,7 @@ select opt in "${options[@]}" "Thoat"; do
     5 ) /etc/vpssim/menu/vpssim-chan-ip-ddos;;
     0) clear && apt;;
       
-    $(( ${#options[@]}+1 )) ) echo "Tam biet!";  clear && /bin/vpssim;;
+    $(( ${#options[@]}+1 )) ) echo "Tam biet!";  clear && /bin/apt;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 
     esac
