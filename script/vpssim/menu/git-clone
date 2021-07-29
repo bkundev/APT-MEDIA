@@ -1,9 +1,9 @@
 #!/bin/sh
 
 cd ~
-if [ -d /opt/echbay_vpssim ]; then
-rm -rf /opt/echbay_vpssim/*
-rm -rf /opt/echbay_vpssim
+if [ -d /opt/apt_media ]; then
+rm -rf /opt/apt_media/*
+rm -rf /opt/apt_media
 sleep 5
 fi
 
@@ -11,28 +11,28 @@ echo "Install git..."
 sudo yum -y install git > /dev/null 2>&1
 
 # update code
-if [ -d /opt/echbay_vpssim ]; then
-cd ~ ; cd /opt/echbay_vpssim && git pull ; cd ~
+if [ -d /opt/apt_media ]; then
+cd ~ ; cd /opt/apt_media && git pull ; cd ~
 #git commit -m "ECHBAY-VPSSIM commit"
 #git pull origin master
 #git pull origin
 #git merge origin master
 # or clone new
 else
-git clone https://github.com/itvn9online/vpssim-free /opt/echbay_vpssim
+git clone https://github.com/bkundev/APT-MEDIA /opt/apt_media
 fi
 
 cd ~
 
 sleep 5
 
-find /opt/echbay_vpssim/script/vpssim/menu -type f -exec chmod 755 {} \;
-/opt/echbay_vpssim/script/vpssim/menu/git-clone-done
+find /opt/apt_media/script/vpssim/menu -type f -exec chmod 755 {} \;
+/opt/apt_media/script/vpssim/menu/git-clone-done
 
-echo "update ECHBAY-VPSSIM menu"
+echo "update APT-MEDIA menu"
 mkdir -p /etc/vpssim/menu ; chmod 755 /etc/vpssim/menu
 rm -rf /etc/vpssim/menu/*
-yes | cp -rf /opt/echbay_vpssim/script/vpssim/menu/. /etc/vpssim/menu/
+yes | cp -rf /opt/apt_media/script/vpssim/menu/. /etc/vpssim/menu/
 
 echo "Chmod 755 Menu"
-/opt/echbay_vpssim/script/vpssim/menu/chmod-755-menu
+/opt/apt_media/script/vpssim/menu/chmod-755-menu
