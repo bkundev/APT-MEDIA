@@ -239,11 +239,23 @@ wp plugin install wordpress-seo --activate --allow-root
 wp plugin install wp-limit-login-attempts ---allow-root
 wp plugin install no-category-base-wpml --activate --allow-root
 wp theme install https://github.com/bkundev/APT-MEDIA/raw/main/plugins/blogmagazine.1.1.6.zip --activate --allow-root
-wp term create category "Thời Sự" --slug="thoi-su"
-wp term create category "Sức Khoẻ" --slug="suc-khoe"
-wp term create category "Thể Thao" --slug="the-thao"
-wp term create category "Công Nghệ" --slug="cong-nghe"
-wp term create category "Đời Sống" --slug="doi-song"
+wp language core install vi --allow-root
+wp language core activate vi --allow-root
+wp rewrite structure /%postname%/ --allow-root
+wp term create category "Thời Sự" --slug="thoi-su" --allow-root
+wp term create category "Sức Khoẻ" --slug="suc-khoe" --allow-root
+wp term create category "Thể Thao" --slug="the-thao" --allow-root
+wp term create category "Công Nghệ" --slug="cong-nghe" --allow-root
+wp term create category "Đời Sống" --slug="doi-song" --allow-root
+wp menu create "Main Menu" --allow-root
+wp menu location assign main-menu blogmagazine_primary_menu --allow-root
+wp term update category 1 --name="Tin Tức" --slug="tin-tuc" --allow-root
+wp menu item add-term main-menu category 1 --allow-root
+wp menu item add-term main-menu category 2 --allow-root
+wp menu item add-term main-menu category 3 --allow-root
+wp menu item add-term main-menu category 4 --allow-root
+wp menu item add-term main-menu category 5 --allow-root
+wp menu item add-term main-menu category 6 --allow-root
 sed -i "/.*DB_COLLATE*./a\//* Authentication Unique Keys and Salts." /home/$website/public_html/wp-config.php
 #echo "define('FS_METHOD','direct');" >> /home/$website/public_html/wp-config.php
 cd

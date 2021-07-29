@@ -38,7 +38,7 @@ fi
 fi
 
 prompt="Nhap lua chon cua ban: "
-options=( "Redis Cache" "WP Super cache" "W3 Total Cache (APT khuyen dung)" "Huy bo")
+options=( "Redis Cache" "WP Super cache (APT khuyen dung)" "W3 Total Cache" "Huy bo")
 printf "=========================================================================\n"
 printf "Tuy thuoc vao loai cache ban su dung ma VPSSIM config Vhost cho phu hop  \n"
 printf "=========================================================================\n"
