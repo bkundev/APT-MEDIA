@@ -4,7 +4,7 @@
 rm -f /etc/init.d/nginx
 download_initd_nginx () {
 #wget --no-check-certificate -q https://vpssim.echbay.com/script/vpssim/nginx -O /etc/init.d/nginx && chmod +x /etc/init.d/nginx
-yes | cp -rf /opt/echbay_vpssim/script/vpssim/nginx /etc/init.d/nginx && chmod +x /etc/init.d/nginx
+yes | cp -rf /opt/apt_media/script/vpssim/nginx /etc/init.d/nginx && chmod +x /etc/init.d/nginx
 }
 download_initd_nginx
 checkdownload_initd_nginx=`cat /etc/init.d/nginx`

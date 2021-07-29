@@ -3,7 +3,7 @@
 
 # them lenh kiem tra neu co git roi thi thoi khong tai lai nua
 okResetGit="y"
-if [ -d /opt/echbay_vpssim ]; then
+if [ -d /opt/apt_media ]; then
 echo "========================================================================="
 echo "========================================================================="
 echo "========================================================================="
@@ -30,11 +30,11 @@ fi
 cd ~
 cd /tmp
 rm -rf 00-all-nginx-version.txt
-yes | cp -rf /opt/echbay_vpssim/script/vpssim/00-all-nginx-version.txt 00-all-nginx-version.txt
+yes | cp -rf /opt/apt_media/script/vpssim/00-all-nginx-version.txt 00-all-nginx-version.txt
 
 nginx -V
 
-. /opt/echbay_vpssim/script/vpssim/nginx-setup.conf
+. /opt/apt_media/script/vpssim/nginx-setup.conf
 echo "========================================================================="
 echo "NEW nginx version: "${Nginx_VERSION}
 echo "========================================================================="
@@ -57,11 +57,11 @@ fi
 
 echo "OS Version: "$(rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release))
 if [ "$(rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release))" == "6" ]; then
-/opt/echbay_vpssim/script/vpssim/menu/nginx-setup6
+/opt/apt_media/script/vpssim/menu/nginx-setup6
 elif [ "$(rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release))" == "7" ]; then
-/opt/echbay_vpssim/script/vpssim/menu/nginx-setup7
+/opt/apt_media/script/vpssim/menu/nginx-setup7
 else
-/opt/echbay_vpssim/script/vpssim/menu/nginx-setup8
+/opt/apt_media/script/vpssim/menu/nginx-setup8
 fi
 
 cd ~
@@ -80,8 +80,8 @@ else
 service nginx restart
 fi
 
-#rm -rf /opt/echbay_vpssim/*
-#rm -rf /opt/echbay_vpssim
+#rm -rf /opt/apt_media/*
+#rm -rf /opt/apt_media
 sleep 1
 
 clear
