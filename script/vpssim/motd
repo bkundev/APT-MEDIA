@@ -1,8 +1,6 @@
 ========================================================================
 * VPS (Server) duoc Cai dat va Cau hinh boi APT MEDIA
-* https://github.com/itvn9online/vpssim-free
-* Mot phien ban khac cua VPSSIM voi nhieu thay doi dang ke
-* https://vpssim.vn/
+* BKunDev95
 ========================================================================
 * Lenh goi VPSSIM menu :    vpssim 
 ========================================================================
@@ -17,10 +15,4 @@
 * Mac dinh: CSF Firewall bi disable.
 *-----------------------------------------------------------------------
 * Neu server > 1 GB RAM ==> Ban nen Enable CSF Firewall.
-========================================================================
-* Vi cong dong VPSSIM user, hay comment neu gap loi khi su dung VPSSIM.
-*-----------------------------------------------------------------------
-* Hoi dap, chia se kinh nghiem, giup do cong dong tai dien dan:
-*-----------------------------------------------------------------------
-* https://www.facebook.com/groups/wordpresseb
 ========================================================================
