@@ -232,8 +232,18 @@ wp core config --dbname=$dataname --dbuser=$username --dbpass=$password --allow-
 #perl -pi -e "s/= 'wp_';/= 'wp_${randomwp}_';/g" wp-config.php
 wp core install --url="http://$website" --title="$website"  --admin_user="$adminwp" --admin_password="$passwp" --admin_email="admin@$website" --allow-root
 wp plugin install wp-super-cache --activate --allow-root
+wp plugin install https://github.com/bkundev/APT-MEDIA/raw/main/plugins/apt-ia.zip --activate --allow-root
+wp plugin install https://github.com/bkundev/APT-MEDIA/raw/main/plugins/wp-auto-spinner.zip --activate --allow-root
+wp plugin install tinymce-advanced --activate --allow-root
+wp plugin install wordpress-seo --activate --allow-root
 wp plugin install wp-limit-login-attempts ---allow-root
 wp plugin install no-category-base-wpml --activate --allow-root
+wp theme install https://github.com/bkundev/APT-MEDIA/raw/main/plugins/blogmagazine.1.1.6.zip --activate --allow-root
+wp term create category "Thời Sự" --slug="thoi-su"
+wp term create category "Sức Khoẻ" --slug="suc-khoe"
+wp term create category "Thể Thao" --slug="the-thao"
+wp term create category "Công Nghệ" --slug="cong-nghe"
+wp term create category "Đời Sống" --slug="doi-song"
 sed -i "/.*DB_COLLATE*./a\//* Authentication Unique Keys and Salts." /home/$website/public_html/wp-config.php
 #echo "define('FS_METHOD','direct');" >> /home/$website/public_html/wp-config.php
 cd
