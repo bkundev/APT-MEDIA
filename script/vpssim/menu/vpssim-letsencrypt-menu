@@ -15,7 +15,7 @@ echo "========================================================================="
 echo "APT MEDIA se cai dat tien ich Acme.Sh truoc khi chay chuc nang nay"
 echo "-------------------------------------------------------------------------"
 echo "Please wait ..."; sleep 5
-wget -O -  https://get.acme.sh | sh
+wget -O -  https://get.acme.sh | sh -s email="aptmedia@aptviet.com"
 rm -rf /etc/vpssim/.tmp/check_crontab_acme
 crontab -l > /etc/vpssim/.tmp/check_crontab_acme
 if [ ! "$(grep "/root/.acme.sh" /etc/vpssim/.tmp/check_crontab_acme)" = "" ]; then
