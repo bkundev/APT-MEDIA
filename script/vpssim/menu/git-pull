@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "Install git..."
+sudo yum -y install git > /dev/null 2>&1
+
+# update code
+if [ -d /opt/echbay_vpssim ]; then
+cd ~ ; cd /opt/echbay_vpssim && git pull origin master ; cd ~
+#git pull origin master
+#git pull origin
+fi
+
+cd ~
+
+sleep 5
+
+find /opt/echbay_vpssim/script/vpssim/menu -type f -exec chmod 755 {} \;
+/opt/echbay_vpssim/script/vpssim/menu/git-clone-done
+

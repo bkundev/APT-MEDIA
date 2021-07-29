@@ -1,0 +1,20 @@
+#!/bin/sh
+
+cd ~
+if [ -d /opt/apt_media ]; then
+rm -rf /opt/apt_media/*
+rm -rf /opt/apt_media
+sleep 2
+fi
+
+sudo yum -y install wget
+
+#
+cd ~
+wget --no-check-certificate -q https://raw.githubusercontent.com/itvn9online/vpssim-free/master/script/vpssim/menu/git-clone
+chmod +x /root/git-clone
+bash /root/git-clone
+
+cd /opt/apt_media
+chmod +x setup
+bash setup
