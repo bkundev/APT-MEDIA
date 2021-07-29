@@ -1187,7 +1187,7 @@ Chao ban!
 Chuc mung ban da hoan thanh qua trinh cai dat va cau hinh server $svip bang APT MEDIA.
 Sau day la thong tin quan ly server cua ban:
 
-+ Lenh goi APT MEDIA: vpssim
++ Lenh goi APT MEDIA: apt
 + Link phpMyAdmin: http://$svip:$svport
 + Quan Ly Zend Opcache: http://$svip:$svport/ocp.php
 + Quan Ly Memcached: http://$svip:$svport/memcache.php
@@ -1220,7 +1220,7 @@ clear
 echo "=========================================================================="
 echo "VPSSIM da hoan tat qua trinh cai dat Server. "
 echo "=========================================================================="
-echo "Lenh goi APT MEDIA: vpssim"
+echo "Lenh goi APT MEDIA: apt"
 echo "--------------------------------------------------------------------------"
 echo "Link phpMyAdmin: http://$svip:$svport"
 echo "--------------------------------------------------------------------------"

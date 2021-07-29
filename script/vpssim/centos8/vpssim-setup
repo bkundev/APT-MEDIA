@@ -965,10 +965,10 @@ yes | cp -rf /opt/apt_media/script/vpssim/motd /etc/motd
 # Download vpssim_main_menu
 download_vpssim_main_menu () {
 #wget --no-check-certificate -q https://hostingaz.vn/script/vpssim/vpssim -O /bin/vpssim && chmod +x /bin/vpssim
-yes | cp -rf /opt/apt_media/script/vpssim/vpssim /bin/vpssim && chmod +x /bin/vpssim
+yes | cp -rf /opt/apt_media/script/vpssim/vpssim /bin/apt && chmod +x /bin/apt
 }
 download_vpssim_main_menu
-checkvpssim_main_menu=`cat /bin/vpssim`
+checkvpssim_main_menu=`cat /bin/apt`
 if [ -z "$checkvpssim_main_menu" ]; then
 download_vpssim_main_menu
 fi
@@ -1158,7 +1158,7 @@ Chao ban!
 Chuc mung ban da hoan thanh qua trinh cai dat va cau hinh server $svip bang APT MEDIA.
 Sau day la thong tin quan ly server cua ban:
 
-+ Lenh goi APT MEDIA: vpssim
++ Lenh goi APT MEDIA: apt
 + Link phpMyAdmin: http://$svip:$svport
 + Quan Ly Zend Opcache: http://$svip:$svport/ocp.php
 + Quan Ly Memcached: http://$svip:$svport/memcache.php
@@ -1191,7 +1191,7 @@ clear
 echo "=========================================================================="
 echo "VPSSIM da hoan tat qua trinh cai dat Server. "
 echo "=========================================================================="
-echo "Lenh goi APT MEDIA: vpssim"
+echo "Lenh goi APT MEDIA: apt"
 echo "--------------------------------------------------------------------------"
 echo "Link phpMyAdmin: http://$svip:$svport"
 echo "--------------------------------------------------------------------------"

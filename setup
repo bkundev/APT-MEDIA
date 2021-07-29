@@ -64,40 +64,22 @@ if [ -f /etc/yum.repos.d/epel.repo ]; then
 sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
 fi
 
-#wget -q https://vpssim.echbay.com/script/vpssim/calc -O /bin/calc && chmod +x /bin/calc
 yes | cp -rf /opt/apt_media/script/vpssim/calc /bin/calc && chmod +x /bin/calc
 clear  
 rm -rf /root/vpssim*
 
-#prompt="Nhap lua chon cua ban: "
-#options=("Tieng Viet" "Tieng Anh" "Huy Bo")
 echo "========================================================================="
 echo "APT MEDIA Ho Tro Centos 6 & Centos 7 & Centos 8 x64"
 echo "-------------------------------------------------------------------------"
 echo "Ban nen su dung Centos 7 x64 de Server co hieu suat tot nhat."
 echo "-------------------------------------------------------------------------"
-#echo "APT MEDIA ho tro 2 ngon ngu: Tieng Anh va Tieng Viet. "
-#echo "-------------------------------------------------------------------------"
-#echo "Trong qua trinh su dung, ban co the thay doi ngon ngu ngon ngu bang chuc "
-#echo "-------------------------------------------------------------------------"
-#echo "nang [ Change APT MEDIA Language ] trong [ Update System ]."
-#echo "========================================================================="
-#echo "                   Chon Ngon Ngu Cho APT MEDIA"
+
 echo "========================================================================="
 
-#PS3="$prompt"
-#select opt in "${options[@]}"; do 
-#case "$REPLY" in
-#1) yourlanguage="vietnamese"; break;;
-#2) yourlanguage="english"; break;;
-#3) yourlanguage="Cancel"; break;;
-#*) echo "Ban nhap sai, vui long nhap theo so thu tu trong danh sach";continue;;
-#esac  
-#done
 yourlanguage="vietnamese"
 
 current_os_version=$(rpm -q --qf "%{VERSION}" $(rpm -q --whatprovides redhat-release))
-#echo $current_os_version
+
 
 cd ~
 
@@ -105,27 +87,19 @@ if [ "$yourlanguage" = "english" ]; then
 echo "----------------------------------------------------------------------------"
 echo "Please wait ..."
 sleep 2
-#wget -q --no-check-certificate https://vpssim.com/script/vpssim/centos${current_os_version}/vpssim-setup && chmod +x vpssim-setup && clear && ./vpssim-setup
-#wget -q --no-check-certificate https://vpssim.echbay.com/script/vpssim/centos${current_os_version}/vpssim-setup && chmod +x vpssim-setup && clear && ./vpssim-setup
 cd /opt/apt_media/script/vpssim/centos${current_os_version} ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 yes | cp -rf /opt/apt_media/script/vpssim/centos${current_os_version}/vpssim-setup ~/vpssim-setup ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 elif [ "$yourlanguage" = "vietnamese" ]; then
 echo "----------------------------------------------------------------------------"
 echo "Please wait ..."
 sleep 2
-#wget -q --no-check-certificate https://vpssim.echbay.com/script/vpssim/centos${current_os_version}/vpssim-setup && chmod +x vpssim-setup && clear && ./vpssim-setup
 if [ "$current_os_version" == "6" ]; then
-#cd /opt/apt_media/script/vpssim/centos6 ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 yes | cp -rf /opt/apt_media/script/vpssim/centos6/vpssim-setup ~/vpssim-setup ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 elif [ "$current_os_version" == "7" ]; then
-#cd /opt/apt_media/script/vpssim/centos7 ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 yes | cp -rf /opt/apt_media/script/vpssim/centos7/vpssim-setup ~/vpssim-setup ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 else
-#cd /opt/apt_media/script/vpssim/centos8 ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 yes | cp -rf /opt/apt_media/script/vpssim/centos8/vpssim-setup ~/vpssim-setup ; chmod +x vpssim-setup ; clear ; bash vpssim-setup
 fi
 else 
 rm -rf /root/install* && rm -rf /root/vpssim* && clear
 fi
-
-
