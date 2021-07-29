@@ -81,7 +81,7 @@ rm -rf /tmp/*.log
 prompt="Lua chon cua ban (0-Thoat):"
 options=("Download File Log" "Clear Log File" "Xoa Link Download")
 printf "=========================================================================\n"
-printf "                VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "                APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                             Quan Ly File Log                           \n"
 printf "=========================================================================\n"
@@ -103,7 +103,7 @@ select opt in "${options[@]}" ; do
     2) clear && /etc/vpssim/menu/downloadlog/vpssim-clear-log-server;;
     3) /etc/vpssim/menu/downloadlog/vpssim-xoa-link-log;;
     #4) clear && /bin/vpssim;;
-    0) clear && vpssim;;
+    0) clear && apt;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 
     esac

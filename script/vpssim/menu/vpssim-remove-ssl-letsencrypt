@@ -4,7 +4,7 @@
 if [ ! -f /etc/vpssim/menu/vpssim-remove-ssl-letsencrypt-read ]; then
 clear
 printf "=========================================================================\n"
-printf "               VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "               APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                      Cai Dat SSL - Let's Encrypt \n"
 echo "========================================================================="

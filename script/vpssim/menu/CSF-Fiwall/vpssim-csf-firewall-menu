@@ -59,8 +59,8 @@ select opt in "${options[@]}" ; do
     11) /etc/vpssim/menu/CSF-Fiwall/vpssim-download-csf-denny;;
     12) /etc/vpssim/menu/CSF-Fiwall/vpssim-cai-dat-csf-csf-before;;
     13) /etc/vpssim/menu/CSF-Fiwall/vpssim-tat-bat-canh-bao-cai-dat-csf;;
-    #14) clear && vpssim;;  
-    0) clear && vpssim;;  
+    #14) clear && apt;;  
+    0) clear && apt;;  
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu";continue;;
 
     esac

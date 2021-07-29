@@ -22,7 +22,7 @@ select opt in "${options[@]}" "Thoat"; do
     10) echo "-------------------------------------------------------------------------" && dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync; rm test && echo "-------------------------------------------------------------------------";;
 #    11) clear && wget http://hostingaz.vn/script/others/freeVPSbench.sh -O - -o /dev/null|bash;;
     11) clear && wget --no-check-certificate https://raw.githubusercontent.com/bkundev/APT-MEDIA/master/script/others/freeVPSbench.sh -O - -o /dev/null|bash;;
-    0) clear && vpssim;;
+    0) clear && apt;;
 $(( ${#options[@]}+1 )) ) echo "Bye!";  clear && /bin/vpssim;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 

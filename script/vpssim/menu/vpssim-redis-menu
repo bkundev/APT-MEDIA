@@ -8,7 +8,7 @@ fi
 prompt="Nhap lua chon cua ban: "
 options=("Clear Redis Cache" "Cau hinh Redis" "Kiem tra Redis Status" "Thoat")
 printf "=========================================================================\n"
-printf "                VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "                APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                           Quan Ly Redis Cache                                \n"
 printf "=========================================================================\n"
@@ -24,8 +24,8 @@ select opt in "${options[@]}" ; do
     1) /etc/vpssim/menu/vpssim-clear-redis;;
     2) /etc/vpssim/menu/vpssim-redis-change-size;;
     3) /etc/vpssim/menu/vpssim-check-redis-status;;
-    4) clear && vpssim;; 
-    0) clear && vpssim;;
+    4) clear && apt;; 
+    0) clear && apt;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu ";continue;;
 
     esac

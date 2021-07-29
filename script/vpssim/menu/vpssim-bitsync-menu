@@ -7,7 +7,7 @@ else
 options=("Bat/Tat BTsync" "Xem Thong Tin Quan Ly" "Thay Mat Khau Login" "Thay Btsync Port " "Change BTsync Version" "Cai Dat BitTorent Sync")
 fi
 printf "=========================================================================\n"
-printf "                VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "                APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                           Quan Ly BitTorrent Sync                                 \n"
 printf "=========================================================================\n"
@@ -37,8 +37,8 @@ select opt in "${options[@]}" ; do
     4) /etc/vpssim/menu/vpssim-thay-doi-bitsync-port;;
     5) /etc/vpssim/menu/vpssim-bitsync-thay-doi-phien-ban-bitsync;;
     6) /etc/vpssim/menu/vpssim-befor-cai-dat-xoa-bitsync;;
-    #7) clear && vpssim;;
-    0) clear && vpssim;;
+    #7) clear && apt;;
+    0) clear && apt;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu";continue;;
 
     esac

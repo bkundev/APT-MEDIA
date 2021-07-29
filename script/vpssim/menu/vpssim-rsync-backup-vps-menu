@@ -13,7 +13,7 @@ options=("Ket Noi VPS Backup" "Cau Hinh Thoi Gian Dong Bo" "Backup VPS Ngay Lap 
 prompt="Nhap lua chon cua ban (0-Thoat): "
 #prompt="Type in your choice (7-Exit):"
 printf "=========================================================================\n"
-printf "               VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "               APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                          Quan Ly VPS Backup \n"
 printf "=========================================================================\n"
@@ -33,8 +33,8 @@ select opt in "${options[@]}" ; do
     4) /etc/vpssim/menu/vpssim-rsync-cai-dat-csf-firewall-cho-vps-backup;;
     5) /etc/vpssim/menu/vpssim-rsync-doi-mat-khau-tai-khoan-root-vps-backup;;
     6) /etc/vpssim/menu/vpssim-rsync-ngat-ket-noi-vps-backup;;
-    7) clear && vpssim;;
-    0) clear && vpssim;;
+    7) clear && apt;;
+    0) clear && apt;;
         *) echo "Ban nhap sai, vui long nhap so thu tu trong danh sach";continue;;
       #  *) echo "You typed wrong, Please type in the ordinal number on the list";continue;;
 

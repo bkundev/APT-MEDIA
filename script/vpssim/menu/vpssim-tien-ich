@@ -43,8 +43,8 @@ select opt in "${options[@]}" ; do
 	24) clear && /etc/vpssim/menu/tienich/update-wordpress-for-all-site;;
 	25) clear && /etc/vpssim/menu/tienich/install-composer;;
 	26) /etc/vpssim/menu/go-bo-scripts;;
-#	23) clear && vpssim;;
-	0) clear && vpssim;;
+#	23) clear && apt;;
+	0) clear && apt;;
 
 
             *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;

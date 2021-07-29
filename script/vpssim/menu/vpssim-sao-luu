@@ -25,7 +25,7 @@ rm -rf /tmp/*vpssim*
 prompt="Lua chon cua ban (0-Thoat):"
 options=("Backup Code 1 Website" "Backup Code All Website" "Tu Dong Backup Website" "Phuc Hoi Website" "Lay Link File Backup" "Xoa Tat Ca File Backup")
 printf "=========================================================================\n"
-printf "                VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "                APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                         Sao Luu & Phuc Hoi Code\n"
 printf "=========================================================================\n"
@@ -55,8 +55,8 @@ select opt in "${options[@]}" ; do
     5 ) /etc/vpssim/menu/vpssim-lay-link-sao-luu-website-backup-menu;;
     #6 ) /etc/vpssim/menu/vpssim-link-tai-sao-luu-tat-ca-cac-site;; "Link File Backup Home" 
     6 ) /etc/vpssim/menu/vpssim-xoa-toan-bo-backup-website;;
-    7 ) clear && vpssim;;
-    0) clear && vpssim;;
+    7 ) clear && apt;;
+    0) clear && apt;;
     
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 

@@ -46,7 +46,7 @@ rm -rf /tmp/*vpssim*
 prompt="Lua chon cua ban (0-Thoat):"
 options=("Tao Database" "Xoa Database" "Backup 1 Database" "Backup Tat Ca Database" "Auto Backup Database" "Phuc Hoi (Restore) Database" "Auto re-Start MySQL Server" "Xem Mat Khau User Root MySQL" "Thay Doi Pass User Root MySQL" "Re-config MySQL" "Lay Link File Backup" "Xoa Tat Ca File Backup" "Danh Sach Database")
 printf "=========================================================================\n"
-printf "                VPSSIM - Quan Ly VPS/Server by HostingAZ.VN \n"
+printf "                APT MEDIA - Quan Ly VPS/Server by BkunDev95\n"
 printf "=========================================================================\n"
 printf "                            Quan ly Database                 \n"
 printf "=========================================================================\n"
@@ -82,7 +82,7 @@ select opt in "${options[@]}" ; do
     12 ) /etc/vpssim/menu/vpssim-xoa-toan-bo-backup-database;;
     13) /etc/vpssim/menu/vpssim-list-database-tren-vps-them-xoa-function;; 
     14) clear && /bin/vpssim;;
-    0) clear && vpssim;;
+    0) clear && apt;;
     *) echo "Ban nhap sai, vui long nhap theo so thu tu tren menu !";continue;;
 
     esac
