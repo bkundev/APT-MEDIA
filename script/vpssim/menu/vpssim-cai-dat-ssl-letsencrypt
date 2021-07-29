@@ -18,7 +18,7 @@ echo "========================================================================="
 echo "Cai dat tien ich Acme.Sh "
 echo "-------------------------------------------------------------------------"
 echo "Please wait ..."; sleep 3
-wget -O -  https://get.acme.sh | sh
+curl https://get.acme.sh | sh -s email="admin@aptviet.com"
 sleep 3
 clear
 echo "========================================================================="
@@ -105,7 +105,7 @@ servername=$(cat /etc/vpssim/.tmp/servername)
 if [ ! -n /etc/vpssim/.tmp/servername ]; then
 clear
 echo "========================================================================="
-echo "Ban da thay doi cau hinh file Vhost khong dung voi config VPSSIM yeu cau"
+echo "Ban da thay doi cau hinh file Vhost khong dung voi config APT MEDIA yeu cau"
 echo "-------------------------------------------------------------------------"
 echo "APT MEDIA khong the chay chuc nang nay."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
@@ -115,7 +115,7 @@ fi
 if [ "`grep "block.conf;" /etc/nginx/conf.d/$website.conf`" = "" ]; then
 clear
 echo "========================================================================="
-echo "Ban da thay doi cau hinh file Vhost khong dung voi config VPSSIM yeu cau"
+echo "Ban da thay doi cau hinh file Vhost khong dung voi config APT MEDIA yeu cau"
 echo "-------------------------------------------------------------------------"
 echo "APT MEDIA khong the chay chuc nang nay"
 /etc/vpssim/menu/vpssim-letsencrypt-menu
@@ -142,7 +142,7 @@ clear
 echo "========================================================================="
 echo "Ban dang su dung SSL cho $website."
 echo "-------------------------------------------------------------------------"
-echo "Hien tai VPSSIM khong ho tro chuyen tu SSL thuong sang Let's Encrypt SSL."
+echo "Hien tai APT MEDIA khong ho tro chuyen tu SSL thuong sang Let's Encrypt SSL."
 /etc/vpssim/menu/vpssim-letsencrypt-menu
 exit
 fi
