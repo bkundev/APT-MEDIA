@@ -15,7 +15,7 @@ maximumsize=10
 rm -rf /etc/vpssim/vpssim.newversion
 cd /etc/vpssim
 #timeout 3 wget -q http://hostingaz.vn/script/vpssim/vpssim.newversion
-timeout 3 wget --no-check-certificate -q https://raw.githubusercontent.com/itvn9online/vpssim-free/master/version -O /etc/vpssim/vpssim.newversion
+timeout 3 wget --no-check-certificate -q https://raw.githubusercontent.com/bkundev/APT-MEDIA/master/version -O /etc/vpssim/vpssim.newversion
 
 cd
 if [ -f /etc/vpssim/vpssim.newversion ]; then
@@ -31,7 +31,7 @@ fi
 if [ ! -f /etc/vpssim/vpssim.newversion ]; then
 clear
 printf "=========================================================================\n"
-echo "Khong the kiem tra phien ban update ECHBAY-VPSSIM"
+echo "Khong the kiem tra phien ban update APT MEDIA"
 echo "-------------------------------------------------------------------------"
 echo "Ban vui long thu lai"
 /etc/vpssim/menu/vpssim-update-upgrade-service-menu
@@ -46,11 +46,11 @@ if [ "$LOCALVER" == "$REMOVER" ]; then
 clear
 rm -rf /etc/vpssim/vpssim.newversion
 echo "========================================================================="
-echo "Ban dang su dung phien ban moi nhat cua ECHBAY-VPSSIM - Phien ban: $LOCALVER"
+echo "Ban dang su dung phien ban moi nhat cua APT MEDIA - Phien ban: $LOCALVER"
 echo "-------------------------------------------------------------------------"
-echo "Xem ECHBAY-VPSSIM update Log tai: https://github.com/itvn9online/vpssim-free"
+echo "Xem APT MEDIA update Log tai: https://github.com/itvn9online/vpssim-free"
 
-echo -n "Ban van muon cap nhat lai ECHBAY-VPSSIM chu? [y/N] "
+echo -n "Ban van muon cap nhat lai APT MEDIA chu? [y/N] "
 read vanCapNhat
 if [ "$vanCapNhat" = "y" ]; then
 echo "OK sir! tien trinh cap nhat se duoc tiep tuc..."
@@ -63,9 +63,9 @@ fi
 fi
 
 printf "=========================================================================\n"
-printf "Xem ECHBAY-VPSSIM update Log tai: https://github.com/itvn9online/vpssim-free\n"
+printf "Xem APT MEDIA update Log tai: https://github.com/itvn9online/vpssim-free\n"
 printf "=========================================================================\n"
-printf "Da phat hien update cho ECHBAY-VPSSIM\n"
+printf "Da phat hien update cho APT MEDIA\n"
 echo "-------------------------------------------------------------------------"
 printf "Phien ban ban dang su dung: $LOCALVER\n"
 echo "-------------------------------------------------------------------------"
@@ -75,17 +75,17 @@ printf "========================================================================
 if [ "$chuaCoBanMoi" = "y" ]; then
 response="y"
 else
-read -r -p "Ban chac chan muon update ECHBAY-VPSSIM ? [y/N] " response
+read -r -p "Ban chac chan muon update APT MEDIA ? [y/N] " response
 fi
 
 if [ "$response" = "y" ] || [ "$response" = "Y" ]; then
 echo "-------------------------------------------------------------------------" 
-echo "Chuan bi update ECHBAY-VPSSIM..... "
+echo "Chuan bi update APT MEDIA..... "
 sleep 1
 
 rm -rf /etc/vpssim/vpssim-update
 #wget -q http://hostingaz.vn/script/vpssim/vpssim-update -O /etc/vpssim/vpssim-update && chmod +x /etc/vpssim/vpssim-update
-wget --no-check-certificate -q https://raw.githubusercontent.com/itvn9online/vpssim-free/master/script/vpssim/vpssim-update -O /etc/vpssim/vpssim-update
+wget --no-check-certificate -q https://raw.githubusercontent.com/bkundev/APT-MEDIA/master/script/vpssim/vpssim-update -O /etc/vpssim/vpssim-update
 chmod +x /etc/vpssim/vpssim-update
 bash /etc/vpssim/vpssim-update
 
@@ -93,7 +93,7 @@ else
 
 clear
 printf "=========================================================================\n"
-echo "Ban da huy bo update ECHBAY-VPSSIM"
+echo "Ban da huy bo update APT MEDIA"
 /etc/vpssim/menu/vpssim-update-upgrade-service-menu
 
 fi

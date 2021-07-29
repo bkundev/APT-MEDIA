@@ -3,32 +3,32 @@
 
 # copy code tu file install sang
 cd ~
-wget --no-check-certificate -q https://raw.githubusercontent.com/itvn9online/vpssim-free/master/script/vpssim/menu/git-clone
+wget --no-check-certificate -q https://raw.githubusercontent.com/bkundev/APT-MEDIA/master/script/vpssim/menu/git-clone
 chmod +x /root/git-clone
 bash /root/git-clone
 
 
-# BEGIN update ECHBAY-VPSSIM main
+# BEGIN update APT MEDIA main
 #rm -rf /etc/motd
 yes | cp -rf /opt/echbay_vpssim/script/vpssim/motd /etc/motd
 
 yes | cp -rf /opt/echbay_vpssim/script/vpssim/calc /bin/calc && chmod +x /bin/calc
 
 yes | cp -rf /opt/echbay_vpssim/script/vpssim/vpssim /bin/vpssim && chmod +x /bin/vpssim
-# BEGIN update ECHBAY-VPSSIM main
+# BEGIN update APT MEDIA main
 
 
 rm -rf /home/vpssim.demo/errorpage_html/*
 yes | cp -rf /opt/echbay_vpssim/script/vpssim/errorpage_html/. /home/vpssim.demo/errorpage_html/
 
 
-# BEGIN update ECHBAY-VPSSIM menu
+# BEGIN update APT MEDIA menu
 #rm -rf /etc/vpssim/menu/*
 #yes | cp -rf /opt/echbay_vpssim/script/vpssim/menu/. /etc/vpssim/menu/
 
 # Chmod 755 Menu
 #/opt/echbay_vpssim/script/vpssim/menu/chmod-755-menu
-# END update ECHBAY-VPSSIM menu
+# END update APT MEDIA menu
 
 
 # confirm done update

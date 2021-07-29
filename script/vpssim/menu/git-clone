@@ -13,7 +13,7 @@ sudo yum -y install git > /dev/null 2>&1
 # update code
 if [ -d /opt/apt_media ]; then
 cd ~ ; cd /opt/apt_media && git pull ; cd ~
-#git commit -m "ECHBAY-VPSSIM commit"
+#git commit -m "APT MEDIA commit"
 #git pull origin master
 #git pull origin
 #git merge origin master

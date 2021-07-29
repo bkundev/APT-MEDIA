@@ -1,4 +1,4 @@
-All Nginx Versions for ECHBAY-VPSSIM Server !
+All Nginx Versions for APT MEDIA Server !
 |1.20.1|
 |1.18.0|
 |1.11.4|
