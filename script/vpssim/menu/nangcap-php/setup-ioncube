@@ -8,7 +8,7 @@ if [ "$ioncubestatus" = "1" ]; then
 mkdir -p /usr/local/ioncube
 #fi
 
-#wget --no-check-certificate -q -O - https://github.com/bkundev/apt-media-software/raw/master/ioncube_loaders_lin_x86-64_BETA.tar.gz | tar -xzf - -C /usr/local/ioncube
+#wget --no-check-certificate -q -O - https://github.com/bkundev/apt-media-software/raw/main/ioncube_loaders_lin_x86-64_BETA.tar.gz | tar -xzf - -C /usr/local/ioncube
 #rm -r -f /root/ioncube_loaders_lin_x86-64_BETA.tar.gz
 
 echo "Download ioncube..."
