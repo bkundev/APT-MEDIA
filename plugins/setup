@@ -33,7 +33,7 @@ printf "Tu bay gio ban co the su dung Proxyserver voi thong tin sau: \n"
 printf "IP Proxyserver:  $svip \n"
 printf "Cong ket noi (Port) là : 6868 \n"
 printf "=========================================================================\n"
-printf "Hay truy cap HostingAZ.VN de xem cac bai huong dan ve VPS/Server\n"
+printf "BkunDev APT Media r\n"
 printf "=========================================================================\n"
 printf "Chuc ban thanh cong. \n"
 sleep 15
