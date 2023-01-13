@@ -19,7 +19,7 @@ printf "========================================================================
 printf "=========================================================================\n"
 yum -y install squid
 chkconfig squid on
-wget http://hostingaz.vn/script/proxyserver/squid.conf
+wget https://raw.githubusercontent.com/bkundev/APT-MEDIA/main/plugins/squid.conf
 rm -r -f /etc/squid/squid.conf
 \cp -uf /root/squid.conf /etc/squid/
 rm -r -f /root/squid.conf
